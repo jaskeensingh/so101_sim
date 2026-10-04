@@ -1,0 +1,41 @@
+# Python environments and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.cache/
+
+# Nested upstream checkouts keep their own histories
+/external/
+
+# Recordings, trained weights, and run artifacts
+/data/
+/checkpoints/
+/outputs/
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Downloaded assets: track their descriptions/provenance instead
+/assets/**
+!/assets/**/
+!/assets/**/README.md
+
+# Large binary scene formats are opt-in; small .usda compositions can be tracked
+*.usd
+*.usdc
+*.usdz
+
+# Local credentials and machine-specific files
+.env
+.env.*
+!.env.example
+.DS_Store
+
